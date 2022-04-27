@@ -15,12 +15,12 @@ st.subheader("Use this webapp for the estimation of modulation format, OSNR and 
 st.write(" There are three models, arranged in a cascaded structure for the prediction of modulation format, OSNR and fibre link length respectively. The models were trained on MATLAB based simulations of an optical fibre network for the following parameters.")
 st.dataframe(df.assign(hack='').set_index('hack'))
 
-st.write("\n The input should be a csv file containing 500 I/Q pairs, first the inphase values followed by the quadrature phase values and it should be of csv extension. Refer the table below for better understanding of the format.")
-df = pd.DataFrame(
-    ['\nreal_1 | real_2 | ... | real_500 | imag_1 | imag_2 | imag _3 | ... | imag_500'], columns=[''])
-# df = pd.DataFrame([['real_1'], ['real_2'], ['...'],
-#                            ['real_500'], ['imag_1'], ['imag_2'], ['...'], ['imag_500'])
-st.dataframe(df.assign(hack='').set_index('hack'))
+st.write("\n The input should be a csv file containing 500 I/Q pairs, first the inphase values followed by the quadrature phase values and it should be of csv extension. Refer the demo file link below for better understanding of the format.")
+# df = pd.DataFrame(
+#     ['\nreal_1 | real_2 | ... | real_500 | imag_1 | imag_2 | imag _3 | ... | imag_500'], columns=[''])
+# # df = pd.DataFrame([['real_1'], ['real_2'], ['...'],
+# #                            ['real_500'], ['imag_1'], ['imag_2'], ['...'], ['imag_500'])
+# st.dataframe(df.assign(hack='').set_index('hack'))
 st.write("Once the dataset is ready, upload the csv file below and wait for the results to show up.")
 # st.write("Make sure you record first and then predict, else it is bound to show some error")
 st.write(
