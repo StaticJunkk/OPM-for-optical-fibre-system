@@ -1,12 +1,9 @@
 import streamlit as st
-import os
 import tensorflow as tf
 from tensorflow import *
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import time
+
 
 df = pd.DataFrame({'Parameter': ['Modulation Format', 'OSNR', 'Fibre Link Length', 'Pulse Peak Power', 'Modulation Frequency'],
                    'Value(s) used': ['OOK, BPSK, QPSK, PAM4, QAM8, QAM16', '8 to 25 dB', '0 to 80 km (step size of 5 km)', '0 dBm', '10 GBaud']})
